@@ -9,7 +9,7 @@ class m221216_171617_create_user_table extends Migration
     {
         $tableOptions = null;
  
-        if ($this->db->driverName === 'mysql') {
+        if ($this->db->driverName === 'test') {
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
         }
  

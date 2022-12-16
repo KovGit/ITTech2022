@@ -1,7 +1,7 @@
 <?php
  
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\widgets\ActiveForm;
  
 $this->title = 'Signup';
 $this->params['breadcrumbs'][] = $this->title;
