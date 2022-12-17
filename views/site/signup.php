@@ -14,10 +14,11 @@ $this->params['breadcrumbs'][] = $this->title;
  
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                 <?= $form->field($model, 'username')->label('Фамилия Имя Отчество')->textInput(['autofocus' => true]) ?>
-                <?= $form->field($model, 'email')->label('Фамилия Имя Отчество')?>
-                <?= $form->field($model, 'date_rozden')->label('Фамилия Имя Отчество')?>
-                <?= $form->field($model, 'otdel')->label('Фамилия Имя Отчество')?>
-                <?= $form->field($model, 'dostup')->label('Фамилия Имя Отчество')?>
+                <?= $form->field($model, 'email')->label('Почта')?>
+                <?= $form->field($model, 'date_rozden')->label('Дата рождения')?>
+                <?= $form->field($model, 'otdel')->label('Отдел')?>
+                <?= $form->field($model, 'dostup')->label('Доступ')?>
+                <?= $form->field($model, 'password')->passwordInput()?>
 
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
