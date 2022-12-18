@@ -129,12 +129,6 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionAddAdmin() {
-        $model = User::find()->where(['username' => 'admin'])->one();
-
-    }
-
-
     public function actionSignup()
     {
         $model = new SignupForm();

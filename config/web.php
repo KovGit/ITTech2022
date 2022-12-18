@@ -16,6 +16,15 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'stgdfhk',
         ],
+            'admin' => [
+                'class' => 'app\modules\admin\Module',
+            ],
+            'main' => [
+                'class' => 'app\modules\main\Module',
+            ],
+            'user' => [
+                'class' => 'app\modules\user\Module',
+            ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -65,6 +74,17 @@ if (YII_ENV_DEV) {
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
+        'modules' => [
+            'admin' => [
+                'class' => 'app\modules\admin\Module',
+            ],
+            'main' => [
+                'class' => 'app\modules\main\Module',
+            ],
+            'user' => [
+                'class' => 'app\modules\user\Module',
+            ],
+        ],
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
